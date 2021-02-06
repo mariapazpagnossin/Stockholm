@@ -353,10 +353,15 @@ MigrationBackup/
 .ionide/
 
 !.gitignore
+!.gitattributes
 
 prepros.config
 *.config
 .DS_Store
 *.DS_Store
+
 .vscode
 *.vscode
+
+.gitattributes
+*.gitattributes
