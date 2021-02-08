@@ -26,9 +26,10 @@ li{
     list-style-type: none;
 }
 
-.header__h1{
-    margin: 0;
-    position: absolute;
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 /** VARIABLES **/
@@ -66,6 +67,10 @@ li{
         margin: auto;
 
         @include flex(row , nowrap , space-between , center , initial);
+    }
+
+    &__span{
+        display: none;
     }
     
     &__logo{
@@ -170,14 +175,15 @@ li{
             opacity: 0%;
             transition: all 0.7s ease;
             transform: translateY(-10%);
+            pointer-events: none;
     
             position: absolute;
 
             &.ver{
                 display: flex;
                 opacity: 97%;
-        
                 transform: translateY(0%);
+                pointer-events: auto;
             }
         }
     }
@@ -321,7 +327,7 @@ li{
         }
     }
     
-    &__h2__2{
+    &__h22{
         color: var(--blanco);
         font-size: 2em;
         letter-spacing: 0.1em;
