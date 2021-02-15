@@ -1,13 +1,16 @@
 /** VARIABLES COLOR **/
 
-$principal: #e6ae48;
-$blanco: white;
-$gris: #393939;
-$gris-text: #747474;
-$gris-text-2: #cccccc;
-$principal-footer: #e6ae48;
-$blanco-footer: white;
-$gris-footer: #393939;
+:root{
+    --principal: #e6ae48;
+    --blanco: white;
+    --gris: #393939;
+    --gris-text: #747474;
+    --gris-text-2: #cccccc;
+    --principal-footer: #e6ae48;
+    --blanco-footer: white;
+    --gris-footer: #393939;
+}
+
 
 /** RESET **/
 *{
@@ -24,11 +27,11 @@ html{
 body{
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
-    color: $gris;
+    color: var(--gris);
 }
 
 a{
-    color: $gris;
+    color: var(--gris);
     text-decoration: none;
 }
 
@@ -114,8 +117,8 @@ img{
 
     &__ul2{
         min-width: 18em;
-        background-color: $blanco;
-        border-top: solid 3em $blanco;
+        background-color: var(--blanco);
+        border-top: solid 3em var(--blanco);
     
         pointer-events: none;
         opacity: 0%;
@@ -134,16 +137,16 @@ img{
 
         &.first{
             padding: 2em 1.8em 0 1.8em;
-            border-top: solid 0.4em $principal;
+            border-top: solid 0.4em var(--principal);
         }
     }
 
     &__item{
         &__home{
-            color: $principal;
+            color: var(--principal);
         }
         &:hover{
-            color: $principal;
+            color: var(--principal);
             transition: all 0.5s ease;
         }
     }
@@ -156,7 +159,7 @@ img{
         color: $gris-text;
 
         &:hover{
-            color: $principal;
+            color: var(--principal);
             transition: all 0.5s ease;
         }
     }
@@ -165,7 +168,7 @@ img{
         @media screen and (max-width:700px){
 
             width: 100%;
-            background-color: $blanco;
+            background-color: var(--blanco);
     
             top: 90px;
             left: 0;
@@ -189,7 +192,7 @@ img{
         @include flex(row , nowrap , center , initial , initial);
 
         font-size: 1.5em;
-        color: $gris;
+        color: var(--gris);
 
         @media screen and (min-width:700px){
             display: none;
@@ -208,7 +211,7 @@ img{
     &__product{
         width:100%;
         min-height: 100vh;
-        background-color: $blanco;
+        background-color: var(--blanco);
 
         @include flex(row , nowrap , center , center , initial);
     }
@@ -247,7 +250,7 @@ img{
     }
 
     &__h2{
-        color: $gris;
+        color: var(--gris);
         font-size: 2em;
         letter-spacing: 0.1em;
     }
@@ -256,19 +259,19 @@ img{
         width: 120px;
         height: 1.8px;
         margin: 2.5em 0;
-        background-color: $gris;
+        background-color: var(--gris);
     }
 
     &__p{
         margin-bottom: 2.5em;
-        color: $gris;
+        color: var(--gris);
         line-height: 1.9em;
     }
 
     &__button{
         max-width: 175px;
         padding: 1em 2em;
-        border: solid 0.2em $principal;
+        border: solid 0.2em var(--principal);
         background-color: transparent;
 
         display: flex;
@@ -279,7 +282,7 @@ img{
         color: $principal;
 
         &:hover{
-            background-color: $principal;
+            background-color: var(--principal);
             color: $blanco;
             transition: all 0.7s ease;
         }
@@ -288,7 +291,8 @@ img{
     &__product2{
         width:100%;
         min-height: 100vh;
-        background-color: $principal;
+        background-color: var(--principal);
+        text-align: right;
 
         @include flex(row-reverse , nowrap , center , center , initial);
     }
@@ -318,13 +322,13 @@ img{
     }
     
     &__h22{
-        color: $blanco;
+        color: var(--blanco);
         font-size: 2em;
         letter-spacing: 0.1em;
     }
 
     &__p2{
-        color: $blanco;
+        color: var(--blanco);
         line-height: 1.9em;
         margin-bottom: 2.5em;
     }
@@ -333,13 +337,13 @@ img{
         width: 120px;
         height: 1.8px;
         margin: 2.5em 0;
-        background-color: $blanco;
+        background-color: var(--blanco);
     }
     
     &__button2{
         max-width: 175px;
         padding: 1em 2em;
-        border: solid 0.2em $blanco;
+        border: solid 0.2em var(--blanco);
         background-color: transparent;
 
         display: flex;
@@ -350,7 +354,7 @@ img{
         color: $blanco;
 
         &:hover{
-            background-color: $blanco;
+            background-color: var(--blanco);
             color: $principal;
             transition: all 0.7s ease;
         }
@@ -363,7 +367,7 @@ img{
 .footer{
     width:100%;
     min-height: 100vh;
-    background-color: $gris-footer;
+    background-color: var(--gris-footer);
 
     @include flex(row , nowrap , center , center , center);
 
@@ -380,7 +384,7 @@ img{
     }
     
     &__copy{
-        color: $principal-footer;
+        color: var(--principal-footer);
         font-size: 0.8em;
         font-weight: 400;
     }
@@ -388,7 +392,7 @@ img{
     &__line{
         width: 120px;
         height: 1.8px;
-        background-color: $blanco-footer;
+        background-color: var(--blanco-footer);
         margin: 2em auto 3em;
         text-align: center;
 
@@ -403,14 +407,14 @@ img{
         margin: 0 8px;
         width: 30px;
         height: 30px;
-        background-color: $blanco-footer;
+        background-color: var(--blanco-footer);
         color: $gris-footer;
         border-radius: 50%;
 
         @include flex(row , nowrap , center , center , initial);
 
         &:hover{
-            background-color: $principal-footer;
+            background-color: var(--principal-footer);
             transition: all 0.7s ease;
         }
     }
@@ -421,9 +425,10 @@ img{
 
 @media screen and (prefers-color-scheme:dark){
 
-    $principal: #e6ae48;
-    $blanco: #393939;
-    $gris: #FAFAFA;
-    $gris-text: #FAFAFA;
-
+    :root{
+        --principal: #e6ae48;
+        --blanco: #393939;
+        --gris: #FAFAFA;
+        --gris-text: #FAFAFA;
+    }
 }
