@@ -1,3 +1,4 @@
+/** VARIABLES COLOR **/
 /** RESET **/
 * {
   margin: 0em;
@@ -13,11 +14,11 @@ html {
 body {
   font-size: 100%;
   font-family: "Raleway", sans-serif;
-  color: var(--gris);
+  color: #393939;
 }
 
 a {
-  color: var(--gris);
+  color: #393939;
   text-decoration: none;
 }
 
@@ -31,22 +32,10 @@ img {
   object-fit: cover;
 }
 
-/** VARIABLES **/
-:root {
-  --principal: #e6ae48;
-  --blanco: white;
-  --gris: #393939;
-  --gris-text: #747474;
-  --gris-text-2: #cccccc;
-  --principal-footer: #e6ae48;
-  --blanco-footer: white;
-  --gris-footer: #393939;
-}
-
 /** HEADER MENU **/
 .header {
   width: 100%;
-  background-color: var(--blanco);
+  background-color: white;
   padding: 1.8em 0;
   position: relative;
 }
@@ -109,8 +98,8 @@ img {
 }
 .header__ul2 {
   min-width: 18em;
-  background-color: var(--blanco);
-  border-top: solid 3em var(--blanco);
+  background-color: white;
+  border-top: solid 3em white;
   pointer-events: none;
   opacity: 0%;
   position: absolute;
@@ -127,13 +116,13 @@ img {
 }
 .header__li2.first {
   padding: 2em 1.8em 0 1.8em;
-  border-top: solid 0.4em var(--principal);
+  border-top: solid 0.4em #e6ae48;
 }
 .header__item__home {
-  color: var(--principal);
+  color: #e6ae48;
 }
 .header__item:hover {
-  color: var(--principal);
+  color: #e6ae48;
   transition: all 0.5s ease;
 }
 .header__subitem {
@@ -141,16 +130,16 @@ img {
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 0.9em;
-  color: var(--gris-text);
+  color: #747474;
 }
 .header__subitem:hover {
-  color: var(--principal);
+  color: #e6ae48;
   transition: all 0.5s ease;
 }
 @media screen and (max-width: 700px) {
   .header__nav {
     width: 100%;
-    background-color: var(--blanco);
+    background-color: white;
     top: 90px;
     left: 0;
     opacity: 0%;
@@ -173,7 +162,7 @@ img {
   align-items: initial;
   align-content: initial;
   font-size: 1.5em;
-  color: var(--gris);
+  color: #393939;
 }
 @media screen and (min-width: 700px) {
   .header__menumovil {
@@ -193,7 +182,7 @@ img {
 .main__product {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--blanco);
+  background-color: white;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -240,7 +229,7 @@ img {
   }
 }
 .main__h2 {
-  color: var(--gris);
+  color: #393939;
   font-size: 2em;
   letter-spacing: 0.1em;
 }
@@ -248,34 +237,34 @@ img {
   width: 120px;
   height: 1.8px;
   margin: 2.5em 0;
-  background-color: var(--gris);
+  background-color: #393939;
 }
 .main__p {
   margin-bottom: 2.5em;
-  color: var(--gris);
+  color: #393939;
   line-height: 1.9em;
 }
 .main__button {
   max-width: 175px;
   padding: 1em 2em;
-  border: solid 0.2em var(--principal);
+  border: solid 0.2em #e6ae48;
   background-color: transparent;
   display: flex;
   text-align: center;
   font-size: 0.8em;
   letter-spacing: 0.2em;
   font-size: 0.8em;
-  color: var(--principal);
+  color: #e6ae48;
 }
 .main__button:hover {
-  background-color: var(--principal);
-  color: var(--blanco);
+  background-color: #e6ae48;
+  color: white;
   transition: all 0.7s ease;
 }
 .main__product2 {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--principal);
+  background-color: #e6ae48;
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: center;
@@ -309,11 +298,6 @@ img {
   justify-content: flex-end;
   align-items: flex-end;
   align-content: initial;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
 }
 @media screen and (max-width: 700px) {
   .main__col2 {
@@ -321,12 +305,12 @@ img {
   }
 }
 .main__h22 {
-  color: var(--blanco);
+  color: white;
   font-size: 2em;
   letter-spacing: 0.1em;
 }
 .main__p2 {
-  color: var(--blanco);
+  color: white;
   line-height: 1.9em;
   margin-bottom: 2.5em;
 }
@@ -334,23 +318,23 @@ img {
   width: 120px;
   height: 1.8px;
   margin: 2.5em 0;
-  background-color: var(--blanco);
+  background-color: white;
 }
 .main__button2 {
   max-width: 175px;
   padding: 1em 2em;
-  border: solid 0.2em var(--blanco);
+  border: solid 0.2em white;
   background-color: transparent;
   display: flex;
   text-align: center;
   font-size: 0.8em;
   letter-spacing: 0.2em;
   font-size: 0.8em;
-  color: var(--blanco);
+  color: white;
 }
 .main__button2:hover {
-  background-color: var(--blanco);
-  color: var(--principal);
+  background-color: white;
+  color: #e6ae48;
   transition: all 0.7s ease;
 }
 
@@ -358,27 +342,16 @@ img {
 .footer {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--gris-footer);
+  background-color: #393939;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
 }
 .footer__center {
   max-width: 400px;
   margin: 2.5em auto 0.5em;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -390,14 +363,14 @@ img {
   height: 70px;
 }
 .footer__copy {
-  color: var(--principal-footer);
+  color: #e6ae48;
   font-size: 0.8em;
   font-weight: 400;
 }
 .footer__line {
   width: 120px;
   height: 1.8px;
-  background-color: var(--blanco-footer);
+  background-color: white;
   margin: 2em auto 3em;
   text-align: center;
   display: flex;
@@ -417,8 +390,8 @@ img {
   margin: 0 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--blanco-footer);
-  color: var(--gris-footer);
+  background-color: white;
+  color: #393939;
   border-radius: 50%;
   display: flex;
   flex-flow: row nowrap;
@@ -427,16 +400,8 @@ img {
   align-content: initial;
 }
 .footer__red:hover {
-  background-color: var(--principal-footer);
+  background-color: #e6ae48;
   transition: all 0.7s ease;
 }
 
 /** MODO NOCHE **/
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --principal: #e6ae48;
-    --blanco: #393939;
-    --gris: #FAFAFA;
-    --gris-text: #FAFAFA;
-  }
-}
