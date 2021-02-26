@@ -5,6 +5,7 @@ Práctica 2 para curso de desarrollo web front end.
 - Copia de la web: https://demo.select-themes.com/stockholm14/#
 - Desarrollado con: HTML5, CSS3 y JavaScript.
 - Plus: Se agregó la opción de "Modo noche" al código web.
+- Resultado: https://mariapazpagnossin.github.io/Stockholm/
 
 
 ## Autora: María Paz Pagnossin 🔗
