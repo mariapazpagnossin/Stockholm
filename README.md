@@ -9,9 +9,11 @@ Práctica 2 para curso de desarrollo web front end.
 
 
 ## Autora: María Paz Pagnossin 🔗
+- Contacto: hola@mariapazpagnossin.com
+- Portfolio web: https://mariapazpagnossin.com/
 - Github: https://github.com/mariapazpagnossin
 - LinkedIn: https://linkedin.com/in/mariapazpagnossin
-- Contacto: pagnossindesign@gmail.com
+- Behance: https://www.behance.net/mariapazpagnossin
 
 
 ## Curso Desarrollo Web Front End 📌 
